@@ -1,0 +1,15 @@
+
+GET https://api.dictionaryapi.dev/api/v2/entries/en/hello
+
+
+
+# GET https://libretranslate.com/translate
+
+# https://github.com/uav4geo/LibreTranslate
+
+# # GET ALL THE WINES
+# GET {{baseUrl}}/wines
+
+# ###
+# # GET SINGLE WINE 
+# GET {{baseUrl}}/wines/5fcd21b1eca2f440bdcec191
