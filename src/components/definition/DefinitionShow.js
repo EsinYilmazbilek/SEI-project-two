@@ -4,22 +4,30 @@ import { v4 as uuid } from 'uuid'
 import { useParams } from 'react-router'
 import { useHistory } from 'react-router'
 import DefinitionCard from './DefinitionCard'
+import { createNotification } from '../common/Notification'
 
 
 function DefinitionShow() {
   const { userWord } = useParams()
   const history = useHistory()
   const [words, setWords] = React.useState(null)
+  const [hasNoAudio, setHasNoAudio] = React.useState(true)
   const id = uuid()
+  const [isSpellingError, setSpellingIsError] = React.useState(false)
 
   React.useEffect(() => {
     const getData = async () => {
       const res = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${userWord}`)
-      console.log(res.data)
+      // console.log(res.data[0])
+      if (res.data[0].phonetics.length !== 0) {
+        setHasNoAudio(false)
+      }
       setWords(res.data)
     }
     getData()
   }, [userWord])
+  console.log(hasNoAudio)
+
 
   const handleReset = () => {
     history.push('/')
@@ -68,7 +76,7 @@ function DefinitionShow() {
                 origin={word.origin}
                 element={word.meanings[0].partOfSpeech}
                 def={word.meanings[0].definitions.map(definition => definition.definition)}
-                audio={word.phonetics[0].audio}
+                audio={!hasNoAudio ? word.phonetics[0].audio : 'none'}
               />
             ))}
           <div onClick={handleReset} className="box-has-text-centered">
