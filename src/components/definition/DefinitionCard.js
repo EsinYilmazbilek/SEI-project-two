@@ -1,9 +1,22 @@
 import { Link } from 'react-router-dom'
 import ReactAudioPlayer from 'react-audio-player'
+import Error from '../common/Error'
+import React from 'react'
+
 
 function DefinitionCard({ name, phonetic, origin, def, element, audio, userWord }) {
 
   const capital = (wordToCapitalize) => wordToCapitalize.charAt(0).toUpperCase() + wordToCapitalize.slice(1)
+
+  const [isError] = React.useState(false)
+  const fetchAudioData = React.useState(() => {
+    if (!audio) {
+      return Error()
+    } else {
+      return (audio)
+    }
+  })
+
 
   return (
     <div className="column is-centered">
@@ -27,6 +40,8 @@ function DefinitionCard({ name, phonetic, origin, def, element, audio, userWord 
           </div>
           <div className="card-content">
             <h5><strong>Audio:</strong></h5>
+            {isError && <Error />}
+            fetchAudioData()
             <ReactAudioPlayer
               src={audio}
               controls
