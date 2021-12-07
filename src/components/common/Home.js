@@ -15,6 +15,7 @@ function Home() {
     setUserWord(e.target.value )
   }
   console.log(userWord)
+
   
   return (
     <section className="hero is-fullheight-with-navbar">
@@ -25,10 +26,10 @@ function Home() {
           </h1>
           <form onSubmit={handleSubmit}>
             <input
-              onBlur={handleChange}
+              onChange={handleChange}
               placeholder="Enter here"
             />
-            <button className="has-text-centered">Define</button>
+            <button type="submit" className="has-text-centered" onSubmit={handleSubmit}>Define</button>
           </form>
         </div>
       </div>
