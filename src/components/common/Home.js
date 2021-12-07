@@ -19,18 +19,23 @@ function Home() {
   
   return (
     <section className="hero is-fullheight-with-navbar">
-      <div className="hero-body has-text-centered">
-        <div className="container">
-          <h1 className="title is-1 has-text-centered">
+      <div className="container is-max-desktop">
+        <div className="hero-body has-text-centered">
+          <div className="container">
+            <h1 className="title is-1 has-text-centered">
             Dictionary <span>📔</span>
-          </h1>
-          <form onSubmit={handleSubmit}>
-            <input
-              onChange={handleChange}
-              placeholder="Enter here"
-            />
-            <button type="submit" className="has-text-centered" onSubmit={handleSubmit}>Define</button>
-          </form>
+            </h1>
+            <form onSubmit={handleSubmit}>
+              <input
+                className="input is-primary"
+                // className="input is-normal"
+                type="text"
+                onChange={handleChange}
+                placeholder="Enter word here"
+              />
+              <button type="submit" className="button is-primary is-hovered" onSubmit={handleSubmit}>Define</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

@@ -42,7 +42,7 @@ function DefinitionCard({ name, phonetic, origin, def, element, audio, userWord 
   
 
   return (
-    <div className="column is-centered">
+    <div className="container is-max-desktop">
       <Link to={`/${userWord}`}>
         <div className="card">
           <div className="card-content">

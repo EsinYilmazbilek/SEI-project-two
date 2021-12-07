@@ -17,12 +17,16 @@ function DefinitionShow() {
 
   React.useEffect(() => {
     const getData = async () => {
-      const res = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${userWord}`)
-      // console.log(res.data[0])
-      if (res.data[0].phonetics.length !== 0) {
-        setHasNoAudio(false)
+      try {
+        const res = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${userWord}`)
+        // console.log(res.data[0])
+        if (res.data[0].phonetics.length !== 0) {
+          setHasNoAudio(false)
+        }
+        setWords(res.data)
+      } catch (err) {
+        setSpellingIsError(true)
       }
-      setWords(res.data)
     }
     getData()
   }, [userWord])
@@ -34,39 +38,40 @@ function DefinitionShow() {
   }  
   console.log(id)
 
-  const [newWord, setNewWord] = React.useState('')
+  const [userNewWord, setUserNewWord] = React.useState('')
 
 
   const handleSubmit = (e) => {
     e.preventDefault() 
-    newWord.toLowerCase()
+    userNewWord.toLowerCase()
+    isSpellingError ? createNotification
+      :
+      history.push('/')
     history.push(`/${userWord.toLowerCase()}`)
   }
 
   const handleChange = (e) => {
-    setNewWord(e.target.value )
+    setUserNewWord(e.target.value )
   }
   console.log(userWord)
 
 
 
   return (
-    <section className="container">
+    <section className="container is-max-desktop">
       <div className="column-body has-text-centered">
         <div className="column-centered">
           <div>
             <form className="search-again" onSubmit={handleSubmit}>
               <input
+                className="input is-primary"
                 onBlur={handleChange}
                 placeholder="Search Again"
               />
-              <button className="has-text-centered">Define</button>
+              <button className="button is-primary is-hovered">Define</button>
             </form>
           </div>
-
-          <h1 className="title is-1 has-text-centered">
-            Definition Page <span>📔</span>
-          </h1>
+          {isSpellingError && createNotification()}
           {words &&
             words.map(word => (
               <DefinitionCard
@@ -80,7 +85,7 @@ function DefinitionShow() {
               />
             ))}
           <div onClick={handleReset} className="box-has-text-centered">
-            <button className="button is-hovered" onClick={handleReset}>Random Word</button>
+            <button className="button is-primary is-outlined" onClick={handleReset}>Random Word Of The Day</button>
           </div>
         </div>
       </div>
