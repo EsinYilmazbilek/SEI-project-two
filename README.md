@@ -1,5 +1,6 @@
 # Overview
-For the second project of the course, we were put in pairs to build a React application that consumes a public API. Upon deciding to build an online English dictionary, we researched and found an API that is practical to use, functions in the desired way and free of charge. We used the CSS framework Bulma for the first time to make styling the website easier and faster.
+For the second project of the course, we were put in pairs to build a React application that consumes a public API. 
+Upon deciding to build an online English dictionary, we researched and found an API that is practical to use, functions in the desired way and free of charge. We used the CSS framework Bulma for the first time to make styling the website easier and faster.
 
 # Brief:
 The project should consume a public API
@@ -13,6 +14,7 @@ The app has been deployed with Netlify and is available [here](https://clever-ni
 
 # Goal
 * To build an online English Dictionary.
+* To include a randomiser button.
 
 # Technologies Used
 * Bulma
