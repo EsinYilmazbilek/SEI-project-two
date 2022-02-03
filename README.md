@@ -6,7 +6,7 @@ The project should consume a public API
 The project should have several components
 
 # Deployment
-The app has been deployed with Netlify and is available here](https://clever-nightingale-c63702.netlify.app/).
+The app has been deployed with Netlify and is available [here](https://clever-nightingale-c63702.netlify.app/).
 
 # Timeframe
 2 days
