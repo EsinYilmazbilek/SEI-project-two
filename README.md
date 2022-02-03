@@ -42,7 +42,7 @@ The first step was to decide what we want to build as a team. After going throug
 
 # Challenges
 * Having to find a suitable API was the biggest challenge of the project. 
-* Once we found it, it’s structure was more complex than anything else we worked with before, made of a nested data structure containing objects and arrays.
+* Once we found it, its structure was more complex than anything else we worked with before, made of a nested data structure containing objects and arrays.
 
 # Wins
 * Being my first pair coding project, it showed me the benefits of working together with someone else. It was a very positive experience to be able to have discussions with the person I was working with, hearing their ideas and solutions while learning together. It helped me to plan and move forward with a more precise manner and gave us a wider perspective on how to approach the tasks.
