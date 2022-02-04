@@ -33,19 +33,7 @@ function Home() {
             English Dictionary
             </h1>
 
-            <div className="level">
-              <form className="level" onSubmit={handleSubmit}>
-                <input
-                  className="input is-primary level-item"
-                  type="text"
-                  onChange={handleChange}
-                  placeholder="Enter word here"
-                />
-                <div className="level-right">
-                  <button type="submit" className="button is-primary level-item" onSubmit={handleSubmit}>Define</button>
-                </div>
-              </form>
-            </div>
+
             <div className="box-has-text-centered">
               <button className="button is-primary" onClick={handleRandomWord}>Random Word Generator</button>
             </div>
