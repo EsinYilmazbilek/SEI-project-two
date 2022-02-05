@@ -3,11 +3,11 @@ For the second project of the course, we were put in pairs to build a React appl
 Upon deciding to build an online English dictionary, we researched and found an API that is practical to use, functions in the desired way and free of charge. We used the CSS framework Bulma for the first time to make styling the website easier and faster.
 
 # Brief:
-The project should consume a public API
-The project should have several components
+The project should consume a public API.
+The project should have several components.
 
 # Deployment
-The app has been deployed with Netlify and is available [here](https://clever-nightingale-c63702.netlify.app/).
+The app has been deployed with Netlify and is available [here](https://clever-nightingale.netlify.app/).
 
 # Timeframe
 2 days
@@ -52,7 +52,7 @@ The first step was to decide what we want to build as a team. After going throug
 1. There are  a few features I would like to add going forward:
 2. I would like to add further error handling for certain instances where the API doesn’t retrieve the data on the first instance or doesn’t have the searched word in its contents, and displays a blank page. This is especially an issue with the random word functionality if the word doesn’t exist on the API.
 3. There is a bug with the spelling mistake error handling and once a mistake was made on the search bar, it pops up again when the word is deleted.
-4. As I am working through my previous projects I would like to add a function to display synonyms and the examples of the searched words being used in sentences.
+4. As I am working through my previous projects, I would like to add a function to display synonyms and the examples of the searched words being used in sentences.
 
 
 
