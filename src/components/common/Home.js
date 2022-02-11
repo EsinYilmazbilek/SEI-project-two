@@ -32,7 +32,17 @@ function Home() {
             <h1 className="title is-1 has-text-centered">
             English Dictionary
             </h1>
-
+            
+            <form onSubmit={handleSubmit}>
+              <input
+                className="input is-primary"
+                // className="input is-normal"
+                type="text"
+                onChange={handleChange}
+                placeholder="Enter word here"
+              />
+              <button type="submit" className="button is-primary is-hovered" onSubmit={handleSubmit}>Define</button>
+            </form>
 
             <div className="box-has-text-centered">
               <button className="button is-primary" onClick={handleRandomWord}>Random Word Generator</button>
