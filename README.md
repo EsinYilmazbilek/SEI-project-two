@@ -110,6 +110,6 @@ I really enjoyed using React the first time and I learnt how to work with differ
 
 I also enjoyed learning using further array methods, and map within a map to retrieve the data from the correct index from an array. 
 
-![](src/screenshots/key_learning.png)
+![](src/screenshots/map.png)
 
 
