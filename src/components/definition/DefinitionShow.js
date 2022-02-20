@@ -62,7 +62,6 @@ function DefinitionShow() {
     <section className="container is-max-desktop is-centered">
       <div className="column-body has-text-centered">
         <div className="container is-centered">
-
           <div className="section">
             <h1 className="title is-1 has-text-centered">
             Clever Nightingale
@@ -71,7 +70,6 @@ function DefinitionShow() {
             English Dictionary
             </h3>
           </div>
-
           <div className="container">
             <div className="container is-centered">
               <div className="section">
@@ -89,7 +87,6 @@ function DefinitionShow() {
               </div>
             </div>
           </div>
-
           {isSpellingError && createNotification()}
           {words &&
             words.map(word => (

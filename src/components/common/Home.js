@@ -27,26 +27,13 @@ function Home() {
       <div className="container is-max-desktop">
         <div className="hero-body has-text-centered">
           <div className="container is-centered">
-
             <div className="container">
-
               <h1 className="title is-1 has-text-centered">
             Clever Nightingale
               </h1>
               <h3 className="title is-3 has-text-centered">
             English Dictionary
               </h3>
-            
-              {/* <form onSubmit={handleSubmit}>
-              <input
-                className="input is-primary"
-                type="text"
-                onChange={handleChange}
-                placeholder="Enter word here"
-              />
-              <button type="submit" className="button is-primary is-hovered" onSubmit={handleSubmit}>Define</button>
-            </form> */}
-
               <div className="level">
                 <form className="level" onSubmit={handleSubmit}>
                   <input
@@ -63,9 +50,7 @@ function Home() {
               <div className="box-has-text-centered">
                 <button className="button is-primary" onClick={handleRandomWord}>Random Word Generator</button>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>

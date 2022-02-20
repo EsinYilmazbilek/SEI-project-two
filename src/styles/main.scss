@@ -1,21 +1,13 @@
 @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-
-.search-again{
-  margin: 50px, 0px;
-}
-
-.none{
-  display: none;
-}
-
-.inactive{
-  display: normal;
-}
-
 .home {
   margin-top: 40px;
+}
+
+.title {
+  color: hsl(171, 100%, 41%);
+  margin-top: 60px;
 }
 
 h1 {
@@ -28,14 +20,29 @@ h3, h5, p {
   font-family: 'Raleway', sans-serif;
 }
 
-.title {
-  color: hsl(171, 100%, 41%);
-  margin-top: 60px;
-}
-
 .input {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.define {
+  margin-top: 20px;
+}
+
+.search-again{
+  margin: 50px, 0px;
+}
+
+.button {
+  margin: 0px 5px;
+}
+
+.none{
+  display: none;
+}
+
+.inactive{
+  display: normal;
 }
 
 .card {
@@ -47,10 +54,4 @@ h3, h5, p {
   border-radius: 5px;
 }
 
-.button {
-  margin: 0px 5px;
-}
 
-.define {
-  margin-top: 20px;
-}
