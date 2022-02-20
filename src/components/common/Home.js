@@ -31,8 +31,11 @@ function Home() {
             <div className="container">
 
               <h1 className="title is-1 has-text-centered">
-            English Dictionary
+            Clever Nightingale
               </h1>
+              <h3 className="title is-3 has-text-centered">
+            English Dictionary
+              </h3>
             
               {/* <form onSubmit={handleSubmit}>
               <input

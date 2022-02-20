@@ -14,14 +14,23 @@
   display: normal;
 }
 
-h1, h3, h5, p {
+.home {
+  margin-top: 40px;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3, h5, p {
   font-weight: normal;
   font-family: 'Raleway', sans-serif;
 }
 
 .title {
   color: hsl(171, 100%, 41%);
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .input {
