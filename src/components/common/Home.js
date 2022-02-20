@@ -28,12 +28,13 @@ function Home() {
         <div className="hero-body has-text-centered">
           <div className="container is-centered">
 
+            <div className="container">
 
-            <h1 className="title is-1 has-text-centered">
+              <h1 className="title is-1 has-text-centered">
             English Dictionary
-            </h1>
+              </h1>
             
-            <form onSubmit={handleSubmit}>
+              {/* <form onSubmit={handleSubmit}>
               <input
                 className="input is-primary"
                 type="text"
@@ -41,11 +42,27 @@ function Home() {
                 placeholder="Enter word here"
               />
               <button type="submit" className="button is-primary is-hovered" onSubmit={handleSubmit}>Define</button>
-            </form>
+            </form> */}
 
-            <div className="box-has-text-centered">
-              <button className="button is-primary" onClick={handleRandomWord}>Random Word Generator</button>
+              <div className="level">
+                <form className="level" onSubmit={handleSubmit}>
+                  <input
+                    className="input is-primary level-item"
+                    type="text"
+                    onChange={handleChange}
+                    placeholder="Enter word here"
+                  />
+                  <div className="level-right">
+                    <button type="submit" className="button is-primary level-item define" onSubmit={handleSubmit}>Define</button>
+                  </div>
+                </form>
+              </div>
+              <div className="box-has-text-centered">
+                <button className="button is-primary" onClick={handleRandomWord}>Random Word Generator</button>
+              </div>
+
             </div>
+
           </div>
         </div>
       </div>
@@ -54,16 +71,3 @@ function Home() {
 }
 
 export default Home
-
-
-{/* <div className="search-form-area">
-              <form className="field is-inline-block-desktop" onSubmit={handleSubmit}>
-                <input
-                  className="input is-primary"
-                  type="text"
-                  onChange={handleChange}
-                  placeholder="Enter word here"
-                />
-                <button type="submit" className="button is-primary is-hovered" onSubmit={handleSubmit}>Define</button>
-              </form>
-            </div> */}

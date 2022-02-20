@@ -48,7 +48,7 @@ function DefinitionShow() {
     } else {
       setUserWord(userNewWord)
       // history.push('/')
-      // history.push(`/${userNewWord}`)
+      history.push(`/${userNewWord}`)
     }
   }
 
@@ -80,7 +80,7 @@ function DefinitionShow() {
                     placeholder="Search Again"
                   />
                   <div className="level-right">
-                    <button className="button is-primary" type="submit" onSubmit={handleSubmit}>Define</button>
+                    <button className="button is-primary define" type="submit" onSubmit={handleSubmit}>Define</button>
                   </div>
                 </form>
               </div>

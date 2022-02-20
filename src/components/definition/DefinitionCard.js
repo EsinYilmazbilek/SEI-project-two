@@ -5,7 +5,6 @@ import React from 'react'
 function DefinitionCard({ name, phonetic, origin, def, element, audio }) {
 
   const capital = (wordToCapitalize) => wordToCapitalize.charAt(0).toUpperCase() + wordToCapitalize.slice(1)
-
   
 
   return (
@@ -19,12 +18,12 @@ function DefinitionCard({ name, phonetic, origin, def, element, audio }) {
           {def.map(eachDef => {
             console.log(eachDef)
             return (
-              <p key={eachDef}>{capital(eachDef)}</p>
+              <p key={eachDef}>{(eachDef)}</p>
             )
           })}
         </div>
         <div className="card-content">
-          <h5><strong>Origin: </strong>{capital(origin)}</h5>
+          <h5><strong>Origin: </strong>{(origin)}</h5>
         </div>
         {audio && <div className="card-content">
           <h5><strong>Audio:</strong></h5>

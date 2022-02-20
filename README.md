@@ -97,13 +97,9 @@ On both days, we did morning stand-ups to share our progress from the evening be
 
 ![](src/screenshots/no_show.png)
 
-3. The url doesn’t update when the user searches for another word and this needs to be fixed for a better user experience.
+3. There is a bug with the spelling mistake error handling and once a mistake was made on the search bar, it pops up again when the word is deleted.
 
-![](src/screenshots/url_error.png)
-
-4. There is a bug with the spelling mistake error handling and once a mistake was made on the search bar, it pops up again when the word is deleted.
-
-5. As I am working through my previous projects I would like to add a function to display synonyms and the examples of the searched words being used in sentences.
+4. As I am working through my previous projects I would like to add a function to display synonyms and the examples of the searched words being used in sentences.
 
 # Future improvements
 I really enjoyed using React the first time and I learnt how to work with different components such as Chat Card and Chat Show, and have them communicate with each other dynamically.
