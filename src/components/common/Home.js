@@ -36,7 +36,6 @@ function Home() {
             <form onSubmit={handleSubmit}>
               <input
                 className="input is-primary"
-                // className="input is-normal"
                 type="text"
                 onChange={handleChange}
                 placeholder="Enter word here"

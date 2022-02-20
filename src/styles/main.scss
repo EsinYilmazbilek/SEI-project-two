@@ -20,7 +20,13 @@ h1, h3, h5, p {
 }
 
 .title {
-  color: hsl(171, 100%, 41%)
+  color: hsl(171, 100%, 41%);
+  margin-top: 40px;
+}
+
+.input {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .card {
